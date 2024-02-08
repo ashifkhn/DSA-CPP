@@ -34,7 +34,7 @@ int lastOccurence(int arr[], int size, int key)
         if (key == arr[mid])
         {
             answer = mid;
-            end = mid + 1;
+            start = mid + 1;
         }
 
         else if (key > arr[mid])
@@ -48,7 +48,6 @@ int lastOccurence(int arr[], int size, int key)
 
 int main(){
     int arrOdd[5] = {3,3,3,5,6};
-    int arrEven[6] = {3, 5, 7, 9, 11,13};
     int leftOccurence = firstOccurence(arrOdd, 5, 3);
     int rightOccurrence = lastOccurence(arrOdd, 5, 3);
     cout << leftOccurence << endl;
